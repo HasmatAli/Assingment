@@ -1,0 +1,121 @@
+.formFields{
+    font-size: 20px;
+    background-color: #45c2dc
+}
+
+.logo-who{
+    color: white;
+    margin: -14px 0 0;
+    line-height: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    text-shadow: 0px 2px 2px #cbcbcb;
+    color: #428bca;
+}
+
+.form-control {
+    width: 200px;
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: #45c2dc
+
+}
+.grid{
+    background-color: #FFFFFF;
+    border: 2px solid #D2D6D5;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    background-color: #94a971;
+    border-radius: 15px;
+    opacity: 0.7;
+    transition: all .25s;
+    margin: 5px;
+    height: 120px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .25s;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.header-con{
+    height: 100px;
+}
+.menus{
+
+    background-color: #45c2dc;
+}
+
+
+.item-detail{
+    border-bottom: 1px solid #00ffff;
+    background-color: #00ff0d;
+
+}
+.right-div{
+    height: 100px;
+}
+
+.item-image{
+   alignment: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 1;
+}
+.addrInfo{
+    margin-left: 100px;
+}
+
+
+.item-name{
+    margin: 0px 10px 10px 120px;
+    padding-top: 10px;
+}
+
+.item-styles{
+    font-size: 18px;
+    font-weight: bold;
+    color: #940000;
+}
+
+.rating-styles{
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    margin-left: 150px;
+}
+
+.col-md-6{
+    padding: 0;
+}
+a{
+    color: white;
+    font-size: 16px;
+}
+
+.grid{
+    cursor: pointer;
+}
+
+.serach
+{  justify-content: space-around;
+    position: absolute;
+    left: 1265px;
+    top:0px;
+    width: 400px;
+    height: 50px;
+
+}
+.serachButton
+{
+    position: absolute;
+    left: 30px;
+    top:38px;
+    width: 100px;
+    height: 40px;
+    color: black;
+
+}
