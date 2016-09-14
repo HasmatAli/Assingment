@@ -1,21 +1,22 @@
 <div class="container">
-	<div class="row">
-		<div class="col-md-4  right-div rounded" style="height: 800px; overflow-y: scroll;">
-			<div ng-click="goToBusiness(item.url)" class="grid"
-				 ng-repeat="item in fetchData"
-				 class="item-detail"
-				 id="{{ item.id }}"
-				 ng-mouseover="goToMarker($event)">
-				<div class="pull-left "><img class="item-image" ng-src="{{item.image}}"/></div>
-				<div class="item-name item-styles">{{$index + 1}}. {{item.name}}</div>
-				<div class="addrInfo">{{item.phone}}</div>
-				<div class="addrInfo">{{item.address}}</div>
-				<div class="rating-styles">{{item.rating}}</div>
-			</div>
-		</div>
-		<div class="col-md-6 right-div">
-			<div id="map" style="width: 780px; height: 800px;"></div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-4  right-div" style="height: 800px; overflow-y: scroll;">
+            <div ng-click="goToBusiness(item.url)" class="grid"
+                 ng-repeat="item in fetchData"
+                 class="item-detail"
+                 id="{{ item.id }}"
+                 ng-mouseover="goToMarker($event)">
+                <div class="pull-left"><img class="item-image" ng-src="{{item.image}}"/></div>
+                <div class="item-name item-styles">{{$index + 1}}. {{item.name}}</div>
+                <div class="addrInfo">{{item.phone}}</div>
+                <div class="addrInfo">{{item.address}}</div>
+                <div class="rating-styles">{{item.rating}}</div>
+            </div>
+        </div>
+
+        <div class="col-md-6 right-div">
+            <div id="map"></div>
+        </div>
+    </div>
 
 </div>

@@ -18,6 +18,7 @@ w3App.controller("viewDataController", function ($scope, $http, $routeParams, $w
                 {
                     id: data[i].id,
                     name: data[i].name,
+                    address: data[i].address,
                     phone: data[i].phone,
                     rating: data[i].rating,
                     image: data[i].image_url,
@@ -50,7 +51,6 @@ w3App.controller("viewDataController", function ($scope, $http, $routeParams, $w
 
     function loadGoogleMarkers() {
         var locations = $scope.fetchData;
-        console.log('locations', locations);
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 10,
             center: new google.maps.LatLng(-33.92, 151.25),

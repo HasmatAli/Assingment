@@ -1,17 +1,35 @@
-.formFields{
+.title
+{
+    background-image:url('../images/map-marker.png');
+   /* background-position:top right;
+    background-repeat:no-repeat;
+    padding-right:10px;
+    font-weight:bold;*/
+}
+#map {
+    width: 810px;
+    height: 800px;
+}
+body{
+    background-image: url('../images/Restaurant1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formFields {
     font-size: 20px;
     background-color: #45c2dc
 }
 
-.logo-who{
+.logo-who {
     color: white;
     margin: -14px 0 0;
     line-height: 100px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: cursive;
     font-weight: normal;
     font-size: 60px;
     text-shadow: 0px 2px 2px #cbcbcb;
     color: #428bca;
+    font-weight: bold;
 }
 
 .form-control {
@@ -21,99 +39,98 @@
     background-color: #45c2dc
 
 }
-.grid{
+
+.grid {
     background-color: #FFFFFF;
     border: 2px solid #D2D6D5;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     background-color: #94a971;
     border-radius: 15px;
     opacity: 0.7;
     transition: all .25s;
     margin: 5px;
-    height: 120px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all .25s;
-    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    -ms-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    -o-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    height: 130px;
+    cursor: pointer;
 }
 
-.header-con{
+.header-con {
     height: 100px;
 }
-.menus{
+
+.menus {
 
     background-color: #45c2dc;
 }
 
-
-.item-detail{
+.item-detail {
     border-bottom: 1px solid #00ffff;
     background-color: #00ff0d;
 
 }
-.right-div{
+
+.right-div {
     height: 100px;
+    width: 400px;
+    margin-left: -20px;
 }
 
-.item-image{
-   alignment: left;
+.item-image {
+    alignment: left;
     margin-left: 10px;
     margin-top: 10px;
     opacity: 1;
+
 }
-.addrInfo{
+
+.addrInfo {
     margin-left: 100px;
+    font-size: 18px;
+    color: red;
+    margin-left: 130px;
 }
 
-
-.item-name{
+.item-name {
     margin: 0px 10px 10px 120px;
     padding-top: 10px;
 }
 
-.item-styles{
-    font-size: 18px;
+.item-styles {
+    font-size: 20px;
     font-weight: bold;
-    color: #940000;
+    color: black;
+    text-align: left;
 }
 
-.rating-styles{
+.rating-styles {
     font-size: 18px;
     font-weight: bold;
     color: green;
-    margin-left: 150px;
+    margin-left: 130px;
 }
 
-.col-md-6{
+.col-md-6 {
     padding: 0;
 }
-a{
+
+a {
     color: white;
     font-size: 16px;
 }
 
-.grid{
-    cursor: pointer;
-}
-
-.serach
-{  justify-content: space-around;
+.serach {
+    justify-content: space-around;
     position: absolute;
     left: 1265px;
-    top:0px;
+    top: 0px;
     width: 400px;
     height: 50px;
 
 }
-.serachButton
-{
+
+.serachButton {
     position: absolute;
     left: 30px;
-    top:38px;
+    top: 38px;
     width: 100px;
     height: 40px;
     color: black;
