@@ -5,7 +5,7 @@ w3App.controller("viewDataController", function ($scope, $http, $routeParams, $w
     var city=angular.element('#city').val();
     if(city.length<1)
     {
-        city='london'
+        city='washigton'
     }
     $scope.fetchData = [];
     $http({
@@ -13,12 +13,13 @@ w3App.controller("viewDataController", function ($scope, $http, $routeParams, $w
         url: '/search?location='+city+'&term=' + itemName + ''
     }).then(function successCallback(response) {
         var data = response.data.businesses;
+        console.log('data>>>>',data)
          for (var i = 0; i < data.length; i++) {
             $scope.fetchData.push(
                 {
                     id: data[i].id,
                     name: data[i].name,
-                    address: data[i].address,
+                    address: data[i].location.address,
                     phone: data[i].phone,
                     rating: data[i].rating,
                     image: data[i].image_url,
@@ -45,7 +46,6 @@ w3App.controller("viewDataController", function ($scope, $http, $routeParams, $w
     };
 
     $scope.goToBusiness = function (url) {
-        console.log('item', url);
         $window.open(url, '_blank');
     };
 
@@ -70,7 +70,6 @@ w3App.controller("viewDataController", function ($scope, $http, $routeParams, $w
                 map: map,
                 icon:icon
             });
-
 
             markers.push(marker);
 

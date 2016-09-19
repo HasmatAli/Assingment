@@ -1,21 +1,19 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-4  right-div" style="height: 800px; overflow-y: scroll;">
-            <div ng-click="goToBusiness(item.url)" class="grid"
-                 ng-repeat="item in fetchData"
-                 class="item-detail"
+        <div class="col-xs-6  right-div">
+            <div ng-click="goToBusiness(item.url)" class="grid" ng-repeat="item in fetchData" class="item-detail"
                  id="{{ item.id }}"
                  ng-mouseover="goToMarker($event)">
                 <div class="pull-left"><img class="item-image" ng-src="{{item.image}}"/></div>
-                <div class="item-name item-styles">{{$index + 1}}. {{item.name}}</div>
-                <div class="addrInfo">{{item.phone}}</div>
-                <div class="addrInfo">{{item.address}}</div>
-                <div class="rating-styles">{{item.rating}}</div>
+                <div class="item-styles">{{$index + 1}}.{{item.name}}</div>
+                <div class="addrInfo"><span class="glyphicon glyphicon-phone"></span> {{item.phone}}</div>
+                <div class="addrInfo"><span class="glyphicon glyphicon-globe"></span> {{item.address[0]}}</div>
+                <div class="rating-styles"><span class="glyphicon glyphicon-star"></span> {{item.rating}}</div>
             </div>
         </div>
 
-        <div class="col-md-6 right-div">
-            <div id="map"></div>
+        <div class="col-xs-6" style="margin-top: 8px;">
+            <div id="map" style="width: 775px"></div>
         </div>
     </div>
 

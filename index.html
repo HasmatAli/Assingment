@@ -6,27 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Who What Where</title>
     <link rel="icon" type="image/gif/png" href="images/yelp.png">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/lib/jquery.min.js"></script>
-    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body ng-controller="w3MainCtrl">
+<body class="img-responsive" ng-controller="w3MainCtrl">
 
 <!-- Header -->
-<div class="container" style="background-color:	#45c2dc">
-    <div class="col-md-6 header-con">
-        <span class="logo-who">Who </span>
-        <span class="logo-who">What </span>
-        <span class="logo-who">Where </span>
-    </div>
-</div>
-
-<!-- Menus -->
-<div class="container">
+<div class="container" style="background-color:	#45c2dc;">
     <div class="row">
-        <div class="col-lg-12 menus" style="min-height: 80px;">
+        <div class="col-xs-12 logo-who">Who What Where</div>
+        <div class="col-xs-12">
             <ul class="nav navbar-nav">
                 <li ng-repeat="menu in menuNames | filter:name" id="{{menu}}">
                     <a href="#/{{menu.name}}">{{menu.name}}</a>
@@ -34,20 +25,22 @@
             </ul>
         </div>
     </div>
-
 </div>
 
-<!-- input for location item and search -->
 <div class="container">
-    <div class="col-md-3 header-con">
-        <input type="text" placeholder="City" id="city" class="form-control formFields"/>
-    </div>
-    <div class="col-md-3 header-con">
-        <input type="text" placeholder="Item" id="Search" class="form-control"/>
-    </div>
-    <div class="col-md-3 header-con">
-        <input type="button" placeholder="Location" class="serachButton formFields" value="Search" ng-click="update()"/>
-    </div>
+    <form class="form-inline" style="margin-top: -20px;">
+        <div class="form-group">
+            <input type="text" placeholder="Enter City Name" id="city" class="form-control formFields"/>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter Search Item" id="Search" class="form-control formFields"/>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn form-control custom" ng-click="update()">
+                <span class="glyphicon glyphicon-search"></span> Search
+            </button>
+        </div>
+    </form>
 </div>
 
 <div>

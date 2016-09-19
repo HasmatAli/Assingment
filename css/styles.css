@@ -1,10 +1,7 @@
-.title
-{
-    background-image:url('../images/map-marker.png');
-   /* background-position:top right;
-    background-repeat:no-repeat;
-    padding-right:10px;
-    font-weight:bold;*/
+
+.custom{
+    padding: 0px 12px;
+    margin-top: 5px;
 }
 #map {
     width: 810px;
@@ -46,7 +43,7 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     background-color: #94a971;
     border-radius: 15px;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all .25s;
     margin: 5px;
     height: 130px;
@@ -55,11 +52,6 @@ body{
 
 .header-con {
     height: 100px;
-}
-
-.menus {
-
-    background-color: #45c2dc;
 }
 
 .item-detail {
@@ -72,6 +64,8 @@ body{
     height: 100px;
     width: 400px;
     margin-left: -20px;
+    height: 800px;
+    overflow-y: scroll;
 }
 
 .item-image {
@@ -84,7 +78,7 @@ body{
 
 .addrInfo {
     margin-left: 100px;
-    font-size: 18px;
+    font-size: 15px;
     color: red;
     margin-left: 130px;
 }
@@ -95,10 +89,9 @@ body{
 }
 
 .item-styles {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
     color: black;
-    text-align: left;
+    margin-left: 130px;
 }
 
 .rating-styles {
@@ -106,10 +99,6 @@ body{
     font-weight: bold;
     color: green;
     margin-left: 130px;
-}
-
-.col-md-6 {
-    padding: 0;
 }
 
 a {
